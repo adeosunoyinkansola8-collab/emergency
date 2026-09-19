@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Emergency</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🚨 EmergencyReport
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="report.html">Report Emergency</a></li>
+                <li><a href="track.html">Track Report</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Report Section -->
+
+
+
+    <section class="report-section">
+
+        <div class="report-container">
+
+            <h1>Report an Emergency 🚨</h1>
+
+            <p>
+                Please provide accurate information about the emergency.
+            </p>
+
+
+            <form id="emergencyForm">
+
+                
+                <label for="name">Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                
+                <label for="emergencyType">
+                    Emergency Type
+                </label>
+
+                <select id="emergencyType" required>
+
+                    <option value="">
+                        Select emergency type
+                    </option>
+
+                    <option value="Fire">
+                        🔥 Fire Emergency
+                    </option>
+
+                    <option value="Medical">
+                        🚑 Medical Emergency
+                    </option>
+
+                    <option value="Security">
+                        🚔 Security Emergency
+                    </option>
+
+                    <option value="Accident">
+                        🚗 Road Accident
+                    </option>
+
+                    <option value="Other">
+                        ⚠️ Other Emergency
+                    </option>
+
+                </select>
+
+
+                
+                <label for="location">
+                    Emergency Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter location"
+                    required
+                >
+
+
+                <!-- Description -->
+                <label for="description">
+                    Describe the Emergency
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="6"
+                    placeholder="Explain what happened..."
+                    required
+                ></textarea>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    Submit Emergency Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Emergency Reporting System
+        </p>
+
+    </footer>
+
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

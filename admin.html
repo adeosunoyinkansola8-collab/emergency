@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🚨 EmergencyReport
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="report.html">Report Emergency</a></li>
+                <li><a href="track.html">Track Report</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Admin Dashboard -->
+
+
+    <section class="admin-section">
+
+        <div class="admin-container">
+
+            <h1>Admin Dashboard 👨‍💻</h1>
+
+            <p>
+                Manage and monitor emergency reports.
+            </p>
+
+
+            <!-- Statistics -->
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3 id="totalReports">0</h3>
+                    <p>Total Reports</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="pendingReports">0</h3>
+                    <p>Pending</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="progressReports">0</h3>
+                    <p>In Progress</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="resolvedReports">0</h3>
+                    <p>Resolved</p>
+                </div>
+
+            </div>
+
+
+            <!-- Reports -->
+
+            
+            <div class="reports-area">
+
+                <h2>Emergency Reports</h2>
+
+                <div id="reportsList"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Emergency Reporting System
+        </p>
+
+    </footer>
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
